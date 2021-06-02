@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title  %}
+익일 관람객 수 예측
+{% endblock  %}
+
+{% block lead  %}
+관람객 수를 예측할 영화를 선택하고 버튼을 눌러 익일 관람객 수를 예측을 합니다.
+{% endblock  %}
+
+{% block main_body  %}
+<form method="POST" action="/api/predict">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">영화 선택</label>
+    <select name="movieCd" class="form-control" id="exampleFormControlSelect1">
+      {% for movie in movies %}
+      <option value={{movie.movieCd}}>{{movie.movieNm}}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <br>
+  <input type="submit" class="btn btn-primary" value="예측">
+  <!-- <input type="submit" class="btn btn-primary" value="예측" /> -->
+</form>
+
+{% if predict %}
+  <br>
+  <h2>{{ movieName }}</h2>
+  <h2>익일 예측 관객 수 : {{ predict }}명</h2>
+{% endif %}
+
+{% if prediction %}
+<p>Person likely to say '{{prediction.compare_text}}' is '{{prediction.result}}'</p>
+{% endif %}
+{% endblock  %}

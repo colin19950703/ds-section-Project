@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+
+{% block alert %}
+{% if alert_msg %}
+<div class="alert alert-{{ alert_msg.type }}" role="alert">
+  {{ alert_msg.msg }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block title %}
+상영 중인 영화
+{% endblock %}
+
+{% block lead %}
+현재 날짜 또는 과거 날짜를 입력해 상영 중인 영화 정보를 불러옵니다. 
+{% endblock %}
+
+{% block main_body %}
+<form method="POST" action="/api/theather">
+  <input name="date" style="margin-bottom:10px" class="form-control" type="text" placeholder="날짜를 입력하세요 YYYYMMDD, ex)20101225">
+  <input type="submit" class="btn btn-primary" value="추가">
+</form>
+
+<button type="button" class="btn btn-secondary" onclick="location.href= '/api/theather/delte_all'">삭제</button>
+
+{% if movie_list %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">순위</th>
+      <th scope="col">영화코드</th>
+      <th scope="col">영화제목</th>
+      <th scope="col">개봉날짜</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for movie in movie_list %}
+    <tr>
+      <th scope="row">{{ movie.rank }}</th>
+      <td>{{ movie.movieCd }}</td>
+      <td>{{ movie.movieNm }}</td>
+      <td>{{ movie.openDt }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% endblock %}
