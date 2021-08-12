@@ -1,0 +1,107 @@
+Epoch 1/25
+2021-08-09 19:59:09.625344: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cudnn64_8.dll
+2021-08-09 19:59:09.957641: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8200
+2021-08-09 19:59:10.394861: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublas64_11.dll
+2021-08-09 19:59:10.732881: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library cublasLt64_11.dll
+59/58 [==============================] - ETA: 0s - loss: 0.5992 - accuracy: 0.8460Found 471 validated image filenames.
+Found 471 validated image filenames.
+58/58 [==============================] - 77s 1s/step - loss: 0.5992 - accuracy: 0.8460 - val_loss: 581.9531 - val_accuracy: 0.5555
+
+Epoch 00001: val_loss improved from inf to 581.95306, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+C:\Users\Ung\Anaconda3\envs\tengpu\lib\site-packages\tensorflow\python\keras\utils\generic_utils.py:494: CustomMaskWarning: Custom mask layers require a config and must override 
+get_config. When loading, the custom mask layer must be passed to the custom_objects argument.
+  warnings.warn('Custom mask layers require a config and must override '
+Epoch 2/25
+58/58 [==============================] - 65s 1s/step - loss: 0.2965 - accuracy: 0.9433 - val_loss: 1.0867 - val_accuracy: 0.9158
+
+Epoch 00002: val_loss improved from 581.95306 to 1.08672, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 3/25
+58/58 [==============================] - 65s 1s/step - loss: 0.2046 - accuracy: 0.9536 - val_loss: 0.5677 - val_accuracy: 0.9213
+
+Epoch 00003: val_loss improved from 1.08672 to 0.56771, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 4/25
+58/58 [==============================] - 65s 1s/step - loss: 0.1538 - accuracy: 0.9613 - val_loss: 0.2045 - val_accuracy: 0.9464
+
+Epoch 00004: val_loss improved from 0.56771 to 0.20454, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 5/25
+58/58 [==============================] - 65s 1s/step - loss: 0.1252 - accuracy: 0.9656 - val_loss: 0.2168 - val_accuracy: 0.9361
+
+Epoch 00005: val_loss did not improve from 0.20454
+Epoch 6/25
+58/58 [==============================] - 65s 1s/step - loss: 0.1108 - accuracy: 0.9675 - val_loss: 0.5182 - val_accuracy: 0.8694
+
+Epoch 00006: val_loss did not improve from 0.20454
+Epoch 7/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0914 - accuracy: 0.9736 - val_loss: 0.0824 - val_accuracy: 0.9746
+
+Epoch 00007: val_loss improved from 0.20454 to 0.08238, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 8/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0820 - accuracy: 0.9767 - val_loss: 0.0782 - val_accuracy: 0.9761
+
+Epoch 00008: val_loss improved from 0.08238 to 0.07818, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 9/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0782 - accuracy: 0.9771 - val_loss: 0.0958 - val_accuracy: 0.9687
+
+Epoch 00009: val_loss did not improve from 0.07818
+Epoch 10/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0742 - accuracy: 0.9778 - val_loss: 0.0974 - val_accuracy: 0.9650
+
+Epoch 00010: val_loss did not improve from 0.07818
+Epoch 11/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0669 - accuracy: 0.9803 - val_loss: 0.0579 - val_accuracy: 0.9820
+
+Epoch 00011: val_loss improved from 0.07818 to 0.05789, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 12/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0638 - accuracy: 0.9814 - val_loss: 0.0710 - val_accuracy: 0.9769
+
+Epoch 00012: val_loss did not improve from 0.05789
+Epoch 13/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0635 - accuracy: 0.9811 - val_loss: 0.0566 - val_accuracy: 0.9825
+
+Epoch 00013: val_loss improved from 0.05789 to 0.05656, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 14/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0582 - accuracy: 0.9828 - val_loss: 0.0569 - val_accuracy: 0.9815
+
+Epoch 00014: val_loss did not improve from 0.05656
+Epoch 15/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0585 - accuracy: 0.9827 - val_loss: 0.0541 - val_accuracy: 0.9828
+
+Epoch 00015: val_loss improved from 0.05656 to 0.05411, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 16/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0581 - accuracy: 0.9827 - val_loss: 0.0602 - val_accuracy: 0.9799
+
+Epoch 00016: val_loss did not improve from 0.05411
+Epoch 17/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0553 - accuracy: 0.9836 - val_loss: 0.0453 - val_accuracy: 0.9855
+
+Epoch 00017: val_loss improved from 0.05411 to 0.04529, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 18/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0547 - accuracy: 0.9832 - val_loss: 0.0582 - val_accuracy: 0.9803
+
+Epoch 00018: val_loss did not improve from 0.04529
+Epoch 19/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0552 - accuracy: 0.9832 - val_loss: 0.0811 - val_accuracy: 0.9744
+
+Epoch 00019: val_loss did not improve from 0.04529
+Epoch 20/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0516 - accuracy: 0.9842 - val_loss: 0.0441 - val_accuracy: 0.9854
+
+Epoch 00020: val_loss improved from 0.04529 to 0.04409, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 21/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0506 - accuracy: 0.9847 - val_loss: 0.0467 - val_accuracy: 0.9850
+
+Epoch 00021: val_loss did not improve from 0.04409
+Epoch 22/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0506 - accuracy: 0.9848 - val_loss: 0.0417 - val_accuracy: 0.9866
+
+Epoch 00022: val_loss improved from 0.04409 to 0.04169, saving model to result/ResUnet\ResUnet_checkpoint-epoch-25-batch-32-trial-001.h5
+Epoch 23/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0514 - accuracy: 0.9842 - val_loss: 0.0480 - val_accuracy: 0.9839
+
+Epoch 00023: val_loss did not improve from 0.04169
+Epoch 24/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0490 - accuracy: 0.9851 - val_loss: 0.0444 - val_accuracy: 0.9853
+
+Epoch 00024: val_loss did not improve from 0.04169
+Epoch 25/25
+58/58 [==============================] - 65s 1s/step - loss: 0.0467 - accuracy: 0.9858 - val_loss: 0.0412 - val_accuracy: 0.9868
